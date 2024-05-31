@@ -1,0 +1,17 @@
+<hr>
+<div class="container">
+  <h2 class="font-mono">&lt;ultimas_&amp;xperiencias&gt; em andamento..</h2>
+  @for(item of arrayExperiences(); track item;){
+    <details>
+      <summary>
+        <p>
+          <strong class="font-mono"> {{ item.summary.strong }} </strong>
+          {{ item.summary.p }}
+        </p>
+      </summary>
+      <article [innerHTML]="item.text" class="font-mono"></article>
+    </details>
+  }
+</div>
+
+
